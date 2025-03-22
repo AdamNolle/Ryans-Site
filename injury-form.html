@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Injury Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between">
+      <a href="index.html" class="font-bold">Baseball Injury Recovery</a>
+      <div>
+        <a href="index.html" class="px-3">Home</a>
+        <a href="injury-form.html" class="px-3">Injury Form</a>
+        <a href="blog.html" class="px-3">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mx-auto py-10 max-w-xl">
+    <h2 class="text-2xl font-bold mb-4">Tell us about your injury:</h2>
+    <form id="injuryForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8">
+      <label class="block mb-2">Age:</label>
+      <input type="number" id="age" required class="mb-4 w-full p-2 border rounded">
+
+      <label class="block mb-2">Weight (lbs):</label>
+      <input type="number" id="weight" required class="mb-4 w-full p-2 border rounded">
+
+      <label class="block mb-2">Injury Type:</label>
+      <select id="injuryType" class="mb-4 w-full p-2 border rounded">
+        <option value="elbow">Elbow Pain</option>
+        <option value="shoulder">Shoulder Pain</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label class="block mb-2">Severity:</label>
+      <select id="severity" class="mb-4 w-full p-2 border rounded">
+        <option value="mild">Mild</option>
+        <option value="moderate">Moderate</option>
+        <option value="severe">Severe</option>
+      </select>
+
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Generate Workout Plan</button>
+    </form>
+  </section>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
